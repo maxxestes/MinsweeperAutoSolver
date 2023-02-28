@@ -1,0 +1,52 @@
+
+/*
+void makeBoard() {
+        pair<int, int> pivotPoints[9];
+        pivotPoints[0] = {0,0}; //top left
+        pivotPoints[1] = {15,0}; //top right
+        pivotPoints[2] = {0,15}; //bottom left
+        pivotPoints[3] = {15,15}; //bottom right
+        pivotPoints[4] = {5,0}; //top middle
+        pivotPoints[5] = {0,8}; //middle left
+        pivotPoints[6] = {8,8}; //middle middle
+        pivotPoints[7] = {15,8}; //middle right
+        pivotPoints[8] = {8,15}; //bottom middle
+
+        int inputBombCount = bombCount;
+        int i = 0;
+        
+        while (inputBombCount > 0) {
+            int randomX = rand() % 3;
+            int randomY = rand() % 3;
+            if (randomX == 2) {
+                randomX = -1;
+            }
+            if (randomY == 2) {
+                randomY = -1;
+            }
+
+            while (pivotPoints[i].first + randomX < 0 || pivotPoints[i].first + randomX > 15
+             || pivotPoints[i].second + randomY < 0 || pivotPoints[i].second + randomY > 15
+             || currentBoard[pivotPoints[i].first + randomX][pivotPoints[i].second + randomY] == -1) {
+                randomX = rand() % 3;
+                randomY = rand() % 3;
+                if (randomX == 2) {
+                    randomX = -1;
+                }
+                if (randomY == 2) {
+                    randomY = -1;
+                }
+            }
+            currentBoard[pivotPoints[i].first + randomX][pivotPoints[i].second + randomY] = -1;
+            inputBombCount--;
+            pivotPoints[i].first += randomX;
+            pivotPoints[i].second += randomY;
+            if (i < 8) {
+                i++;
+            }
+            else {
+                i = 0;
+            }
+        } 
+    }
+    */
